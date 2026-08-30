@@ -1,0 +1,66 @@
+:root{
+    --calc-height:calc(100vh - 170px);
+    --screen-height: calc(100vh - 170px - 340px) ;
+
+}
+body{
+    background-image: url(https://www.jisan.io/dom-projects/projects/normal-calculator/img/bg4.png);
+}
+.calculator{
+    justify-items: center;
+}
+.content{
+    border: solid;
+    border-width: 1px;
+    border-radius: 10%;
+    box-shadow: 7px 7px 5px;
+    width: 300px;
+    height: var(--calc-height) ; 
+    margin-top: 90px;
+    min-height: 559.6px;
+}
+.screen{
+    height: var(--screen-height);
+    min-height: calc(559.6px - 340px);
+    box-sizing: border-box;
+    text-align: end;
+    padding: 30px;
+    padding-bottom: 0px;
+    font-size: 1.9em;
+    font-weight: bold;
+    opacity: 65%;
+}
+.screen .output{
+    height: calc(var(--screen-height)/2);
+    min-height: calc((559.6px - 340px)/2);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.screen .result{
+    height: calc(var(--screen-height)/2);
+    min-height: calc((559.6px - 340px)/2);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.input{
+    height: calc(var(--calc-height) - var(--screen-height));
+    position: relative;
+}
+.row{
+    position: absolute;
+    bottom: 10px;
+}
+.btn{
+    width: 55px;
+    height: 55px;
+    border-radius: 20% !important;
+    font-size: 30px !important;
+    margin-top: 10px;
+
+}
+#equal{
+    width: 130px !important;
+    border-radius: 30% !important;
+}
